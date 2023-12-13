@@ -22,17 +22,17 @@ const About = () => {
                             <p>
                                 Want to know more ?
                             </p>
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="link-icon"/>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="link-icon" />
                         </HStack>
                     </Link>
-                    <Link href={Docs.Resume_ANG_EN} w={'fit-content'} isExternal>
+                    <a href={Docs.Resume_ANG_EN} download>
                         <HStack spacing={4} className="about-link">
                             <p>
                                 Otherwise, check out my resume
                             </p>
                             <FontAwesomeIcon icon={faFilePdf} className="link-icon" />
                         </HStack>
-                    </Link>
+                    </a>
                 </HStack>
             </VStack>
         </VStack>

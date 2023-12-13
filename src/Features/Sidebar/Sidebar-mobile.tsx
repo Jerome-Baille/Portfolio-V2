@@ -61,7 +61,7 @@ const SidebarMobile = () => {
     return (
         <>
             <div className="sidebar-mobile">
-                <Button colorScheme="teal" variant="outline" onClick={onOpen}>
+                <Button variant="ghost" onClick={onOpen}>
                     <FontAwesomeIcon icon={faBars} />
                 </Button>
             </div>
