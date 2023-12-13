@@ -1,0 +1,17 @@
+.sidebar-mobile {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+  
+  .sidebar-logo--mobile {
+    width: 150px;
+    height: auto;
+    margin: auto;
+  }
+  
+  .sidebar-drawer {
+    background-color: var(--primary) !important;
+    color: var(--tertiary) !important;
+  }

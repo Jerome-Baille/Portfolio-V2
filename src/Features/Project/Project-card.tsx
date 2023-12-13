@@ -1,4 +1,6 @@
-import { Card, CardBody, CardFooter, Image, Flex, Grid, Tag, ListItem } from "@chakra-ui/react";
+import { Image, Flex, Grid, Tag, ListItem, VStack, HStack } from "@chakra-ui/react";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
@@ -12,33 +14,32 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, subtitle, description, tags, imageSrc }) => (
     <ListItem>
-        <Link to={`/project/${id}`}>
-            <Grid gridTemplateColumns={'150px 1fr'} gap={4}>
-                <Image src={imageSrc} width={'150px'} height={'150px'} className="project-logo" alt="project" />
+        <Grid className="project-card-container" gap={4}>
+            <Image src={imageSrc} className="project-thumbnail" alt="project" />
 
-                <Card>
-                    <CardBody>
+            <VStack gap={4} alignItems={"flex-start"}>
+                <Link to={`/project/${id}`}>
+                    <HStack gap={4}>
                         <h4>{title}</h4>
-                        <h5>"{subtitle}"</h5>
-                        <p>
-                            {description}
-                        </p>
-                    </CardBody>
-                    <CardFooter>
-                        <Flex flexWrap={'wrap'} gap={4}>
-                            {tags.map((tag, index) =>
-                                <Tag
-                                    key={index}
-                                    className="project-tag"
-                                >
-                                    {tag}
-                                </Tag>)
-                            }
-                        </Flex>
-                    </CardFooter>
-                </Card>
-            </Grid>
-        </Link>
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="link-icon" />
+                    </HStack>
+                </Link>
+                <h5 className="subtitle">"{subtitle}"</h5>
+                <p>
+                    {description}
+                </p>
+                <Flex flexWrap={'wrap'} gap={4}>
+                    {tags.map((tag, index) =>
+                        <Tag
+                            key={index}
+                            className="custom-tag"
+                        >
+                            {tag}
+                        </Tag>)
+                    }
+                </Flex>
+            </VStack>
+        </Grid>
     </ListItem>
 );
 

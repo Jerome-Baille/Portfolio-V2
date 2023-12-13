@@ -4,10 +4,12 @@ import App from './App.tsx'
 import './index.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import { HashRouter } from 'react-router-dom'
+import { ScrollToTop } from './ScrollToTop.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <ChakraProvider>
         <App />
       </ChakraProvider>

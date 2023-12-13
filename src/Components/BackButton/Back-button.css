@@ -1,0 +1,21 @@
+@keyframes moveLeftRightLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.back-button-icon {
+    transition: transform infinite 1s ease-in-out;
+}
+
+.back-button:hover .back-button-icon {
+    animation: moveLeftRightLeft infinite 1s ease-in-out;
+}

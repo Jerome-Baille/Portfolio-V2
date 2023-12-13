@@ -1,4 +1,4 @@
-import { Images, Mockups } from "../assets/images";
+import { Images, Mockups, Screenshots } from "../assets/images";
 
 export const projectsVariables = [
     {
@@ -60,8 +60,8 @@ export const projectsVariables = [
             ]
         },
         tags: ['React', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'Google Chrome Extension'],
-        logo: Images.JobTrackerLogo,
-        mockups: [Mockups.JobTrackerMockup1, Mockups.JobTrackerMockup2, Mockups.JobTrackerMockup3],
+        screenshot: Screenshots.JobTrackerScreenshot,
+        mockups: [Images.JobTrackerLogo, Mockups.JobTrackerMockup1, Mockups.JobTrackerMockup2, Mockups.JobTrackerMockup3],
         website: "https://job-tracker.jerome-baille.fr",
         github: {
             frontend: "https://github.com/Jerome-Baille/job-visualiser",
@@ -107,8 +107,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ['Angular', 'TypeScript', 'Node.js', 'Express', 'MySQL'],
-        logo: Images.PantryPalLogo,
-        mockups: [Mockups.PantryPalMockup1, Mockups.PantryPalMockup2, Mockups.PantryPalMockup3],
+        screenshot: Screenshots.PantryPalScreenshot,
+        mockups: [Images.PantryPalLogo, Mockups.PantryPalMockup1, Mockups.PantryPalMockup2, Mockups.PantryPalMockup3],
         website: "https://pantry-pal.jerome-baille.fr",
         github: {
             frontend: "https://github.com/Jerome-Baille/PantryPal-frontend",
@@ -152,8 +152,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ['Angular', 'TypeScript', 'Node.js', 'Express', 'MySQL'],
-        logo: Images.FlickPickLogo,
-        mockups: [Mockups.FlickPickMockup1, Mockups.FlickPickMockup2],
+        screenshot: Screenshots.FlickPickScreenshot,
+        mockups: [Images.FlickPickLogo, Mockups.FlickPickMockup1, Mockups.FlickPickMockup2],
         website: "https://flick-pick.jerome-baille.fr",
         github: {
             frontend: "https://github.com/Jerome-Baille/FlickPick-frontend",
@@ -206,8 +206,8 @@ export const projectsVariables = [
             ]
         },
         tags: ['Angular', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'Google Chrome Extension'],
-        logo: Images.GameVerseLogo,
-        mockups: [Mockups.GameVerseMockup1, Mockups.GameVerseMockup2],
+        screenshot: Screenshots.GameVerseScreenshot,
+        mockups: [Images.GameVerseLogo, Mockups.GameVerseMockup1, Mockups.GameVerseMockup2],
         website: "https://game-verse.jerome-baille.fr",
         github: {
             frontend: "",
@@ -255,8 +255,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["Angular", "TypeScript", "Node.js", "Express", "MongoDB"],
-        logo: Images.MesGourmandysLogo,
-        mockups: [],
+        screenshot: Screenshots.MesGourmandysScreenshot,
+        mockups: [Images.MesGourmandysLogo],
         website: "https://jerome-baille.github.io/MesGourMandys/accueil",
         github: {
             frontend: "",
@@ -301,8 +301,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["Angular", "TypeScript", "Node.js", "Express", "MySQL"],
-        logo: Images.GroupomaniaLogo,
-        mockups: [Mockups.GroupomaniaMockup1, Mockups.GroupomaniaMockup2],
+        screenshot: '',
+        mockups: [Images.GroupomaniaLogo, Mockups.GroupomaniaMockup1, Mockups.GroupomaniaMockup2],
         website: "",
         github: {
             frontend: "https://github.com/Jerome-Baille/JeromeBaille_7_23022022/tree/main/frontend",
@@ -340,8 +340,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["Node.js", "Express", "MongoDB"],
-        logo: Images.PiiquanteLogo,
-        mockups: [Mockups.PiiquanteMockup1, Mockups.PiiquanteMockup2],
+        screenshot: '',
+        mockups: [Images.PiiquanteLogo, Mockups.PiiquanteMockup1, Mockups.PiiquanteMockup2],
         website: "",
         github: {
             frontend: "",
@@ -369,8 +369,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["Angular", "TypeScript", "Node.js", "Express", "MySQL"],
-        logo: Images.KanapLogo,
-        mockups: [Mockups.KanapMockup1, Mockups.KanapMockup2],
+        screenshot: Screenshots.KanapScreenshot,
+        mockups: [Images.KanapLogo, Mockups.KanapMockup1, Mockups.KanapMockup2],
         website: "https://jerome-baille.github.io/JeromeBaille_5_03012022/front/index.html",
         github: {
             frontend: "https://github.com/Jerome-Baille/JeromeBaille_5_03012022/tree/main/front",
@@ -399,8 +399,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-        logo: Images.LexirLogo,
-        mockups: [Mockups.LexirMockup1, Mockups.LexirMockup2],
+        screenshot: Screenshots.LexirScreenshot,
+        mockups: [Images.LexirLogo, Mockups.LexirMockup1, Mockups.LexirMockup2],
         website: "https://shop.lexir.pt/",
         github: {
             frontend: "",
@@ -428,8 +428,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["HTML", "CSS", "JavaScript"],
-        logo: Images.LaChouetteAgenceLogo,
-        mockups: [Mockups.LaChouetteAgenceMockup1, Mockups.LaChouetteAgenceMockup2],
+        screenshot: Screenshots.LaChouetteAgenceScreenshot,
+        mockups: [Images.LaChouetteAgenceLogo, Mockups.LaChouetteAgenceMockup1, Mockups.LaChouetteAgenceMockup2],
         website: "https://jerome-baille.github.io/JeromeBaille_4_09122021/",
         github: {
             frontend: "https://github.com/Jerome-Baille/JeromeBaille_4_09122021",
@@ -457,8 +457,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["HTML", "CSS", "JavaScript"],
-        logo: Images.OhMyFoodLogo,
-        mockups: [Mockups.OhmyfoodMockup1, Mockups.OhmyfoodMockup2],
+        screenshot: Screenshots.OhMyFoodScreenshot,
+        mockups: [Images.OhMyFoodLogo, Mockups.OhmyfoodMockup1, Mockups.OhmyfoodMockup2],
         website: "https://jerome-baille.github.io/ohmyfood/index.html",
         github: {
             frontend: "https://github.com/Jerome-Baille/ohmyfood",
@@ -488,8 +488,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["React", "TypeScript", "Sass"],
-        logo: Images.PhoceaTravelLogo,
-        mockups: [Mockups.PhoceaTravelMockup1, Mockups.PhoceaTravelMockup2],
+        screenshot: Screenshots.PhoceaTravelScreenshot,
+        mockups: [Images.PhoceaTravelLogo, Mockups.PhoceaTravelMockup1, Mockups.PhoceaTravelMockup2],
         website: "https://jerome-baille.github.io/phocea-travel/",
         github: {
             frontend: "https://github.com/Jerome-Baille/phocea-travel",
@@ -533,8 +533,8 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["React", "TypeScript", "Node.js", "Express", "MySQL"],
-        logo: Images.KiCultureLogo,
-        mockups: [],
+        screenshot: Screenshots.KiCultureScreenshot,
+        mockups: [Images.KiCultureLogo],
         website: "https://www.kiculture.org/",
         github: {
             frontend: "",
@@ -543,9 +543,9 @@ export const projectsVariables = [
         }
     },
     {
-        id: "my-portfolio",
+        id: "my-portfolio-v1",
         date: 2020,
-        title: "My Portfolio",
+        title: "My Portfolio V1",
         subtitle: "",
         description: "Explore a developer's showcase—an interactive portfolio with a sleek, responsive design. Immerse yourself in the sophistication of dark mode and engage with captivating animations that bring projects to life. Connect seamlessly through a user-friendly contact form. This portfolio isn't just a website; it's a dynamic exhibition of skills and creativity, where design meets functionality in a seamless digital experience.",
         client: "Personal Project",
@@ -569,9 +569,9 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["React", "TypeScript"],
-        logo: Images.PortfolioLogo,
-        mockups: [],
-        website: "https://jerome-baille.fr",
+        screenshot: Screenshots.PortfolioV1Screenshot,
+        mockups: [Images.PortfolioV1Logo],
+        website: "https://v1.jerome-baille.fr",
         github: {
             frontend: "",
             backend: "",
@@ -615,6 +615,7 @@ export const projectsVariables = [
             extension: []
         },
         tags: ["React", "TypeScript", "Node.js", "Express", "MySQL"],
+        screenshot: '',
         logo: "",
         mockups: [],
         website: "",

@@ -1,0 +1,47 @@
+.about-portrait {
+    border: 10px solid var(--secondary);
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 10px 10px 5px rgba(211, 172, 146, 0.3);
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  
+  .about-portrait-content {
+    padding: 5px;
+    object-fit: cover;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .about-portrait-content.avatar {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .about-portrait-content.myself {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .about-portrait-content:hover.avatar {
+    opacity: 0;
+  }
+  
+  .about-portrait-content:hover.myself {
+    opacity: 1;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: 'stretch';
+    gap: 2rem;
+  }
+
+  .about-link {
+    font-size: 16px;
+    color: var(--secondary);
+  }

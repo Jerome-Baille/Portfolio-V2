@@ -1,10 +1,10 @@
 import { Box, Grid } from "@chakra-ui/react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
     return (
-        <Grid gridTemplateColumns={'60px 1fr'} className="app">
+        <Grid className="app">
             <Box />
             <Sidebar />
             <Box m={'0 1rem 1rem 1rem'} flexGrow={1}>

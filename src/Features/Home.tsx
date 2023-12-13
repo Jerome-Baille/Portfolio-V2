@@ -6,8 +6,8 @@ import Header from "./Header";
 
 const Home = () => {
     return (
-        <main>
-            <VStack alignItems={'stretch'} gap={'5rem'} padding={'0 1rem'}>
+        <main className="main-container">
+            <VStack alignItems={'stretch'} gap={'5rem'} padding={'0 1rem'} mb={'5rem'}>
                 <Header />
                 <About />
                 <Project />

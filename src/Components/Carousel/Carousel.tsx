@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+import './Carousel.css';
+
 interface ImageCarouselProps {
     images: string[];
 }
@@ -21,7 +23,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     return (
         <Box className="carousel">
             <VStack alignItems={'stretch'} spacing={'1rem'}>
-                <HStack alignItems={'center'} justifyContent={'space-between'}>
+                <HStack alignItems={'center'} justifyContent={'space-between'} h={'500px'}>
                     {images[0] === images[selectedImage] ?
                         null
                         :

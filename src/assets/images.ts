@@ -3,6 +3,7 @@ import PantryPalLogo from "./projects/PantryPal/PantryPal-logo.png";
 import GameVerseLogo from "./projects/GameVerse/GameVerse-logo.png";
 import FlickPickLogo from "./projects/FlickPick/FlickPick-logo.png";
 import PortfolioLogo from "./portfolio-logo.png";
+import PortfolioV1Logo from "./projects/Portfolio-v1/Portfolio-v1-logo.png";
 import Portrait from "./portrait.png"
 import GroupomaniaLogo from "./projects/Groupomania/Groupomania-logo.png";
 import PiiquanteLogo from "./projects/Piiquante/Piiquante-logo.png";
@@ -17,6 +18,7 @@ import KanapLogo from "./projects/Kanap/Kanap-logo.png";
 export const Images = {
     Portrait,
     PortfolioLogo,
+    PortfolioV1Logo,
     JobTrackerLogo,
     PantryPalLogo,
     GameVerseLogo,
@@ -94,3 +96,31 @@ export const Mockups = {
     LexirMockup1,
     LexirMockup2
 }
+
+import PortfolioV1Screenshot from "./projects/Portfolio-v1/portfolio-v1-screenshot.png";
+import JobTrackerScreenshot from "./projects/JobVisualiser/JobTracker-screenshot.png";
+import PantryPalScreenshot from "./projects/PantryPal/PantryPal-screenshot.png";
+import FlickPickScreenshot from "./projects/FlickPick/FlickPick-screenshot.png";
+import GameVerseScreenshot from "./projects/GameVerse/GameVerse-screenshot.png";
+import MesGourmandysScreenshot from "./projects/MesGourmandys/MesGourmandys-screenshot.png";
+import KanapScreenshot from "./projects/Kanap/Kanap-screenshot.png";
+import LexirScreenshot from "./projects/Lexir/Lexir-screenshot.png";
+import LaChouetteAgenceScreenshot from "./projects/LaChouetteAgence/LaChouetteAgence-screenshot.png";
+import OhMyFoodScreenshot from "./projects/Ohmyfood/Ohmyfood-screenshot.png";
+import PhoceaTravelScreenshot from "./projects/PhoceaTravel/PhoceaTravel-screenshot.png";
+import KiCultureScreenshot from "./projects/KiCulture/KiCulture-screenshot.png";
+
+export const Screenshots = {
+    PortfolioV1Screenshot,
+    JobTrackerScreenshot,
+    PantryPalScreenshot,
+    FlickPickScreenshot,
+    GameVerseScreenshot,
+    MesGourmandysScreenshot,
+    KanapScreenshot,
+    LexirScreenshot,
+    LaChouetteAgenceScreenshot,
+    OhMyFoodScreenshot,
+    PhoceaTravelScreenshot,
+    KiCultureScreenshot
+};
