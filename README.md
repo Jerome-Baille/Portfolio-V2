@@ -1,30 +1,74 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-Latest-orange)](https://vitejs.dev/)
+[![Chakra UI](https://img.shields.io/badge/Chakra%20UI-2.8.2-purple)](https://chakra-ui.com/)
 
-Currently, two official plugins are available:
+[Portfolio Live Demo](https://jerome-baille.fr)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Portfolio is a personal portfolio website that showcases my skills, projects, and experiences. It is built with modern technologies like React, Vite, and Chakra UI.
 
-## Expanding the ESLint configuration
+## 📌 Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
+- [Contact Information](#contact-information)
+- [Acknowledgments](#acknowledgments)
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Frontend:
+  - React
+  - Chakra UI
+  - Vite
+  - Typescript
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🗺️ Features
+
+- Responsive Design:
+  - The website is fully responsive and works on various screen sizes.
+
+- Dynamic Content:
+  - The content of the website can be easily updated by modifying the source data.
+
+- Contact Form:
+  - A contact form is available for visitors to send messages.
+
+## ⚙️ Set Up
+
+To run the Portfolio website locally, follow these steps:
+
+1. Clone this repository.
+2. Navigate to the project directory and install dependencies using `npm install`.
+3. Run the development server using `npm run dev`.
+
+## 🚀 Usage
+
+1. Navigate to the website.
+2. Explore the different sections: Home, About, Projects, and Contact.
+3. Send a message through the contact form.
+
+## Contributing
+
+Contributions to Portfolio are welcome. Please submit issues or pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## Authors
+
+- [Jerome BAILLE](https://github.com/Jerome-Baille) - Frontend Development
+
+## 🤔 Contact Information
+
+For questions or support, please contact me through [my website](https://jerome-baille.fr).
+
+## 🙏 Acknowledgments
+
+- Thanks to the React, Vite, and Chakra UI communities for their fantastic tools and libraries.
