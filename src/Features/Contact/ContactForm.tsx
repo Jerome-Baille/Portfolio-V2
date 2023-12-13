@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, Input, Button, Textarea, VStack, HStack } from "@chakra-ui/react";
+import { FormControl, FormLabel, Input, Button, Textarea, VStack, HStack, useToast } from "@chakra-ui/react";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Formik, Field, Form, FieldProps, ErrorMessage } from 'formik';
@@ -19,6 +19,8 @@ interface ContactFormValues {
 }
 
 const ContactForm = () => {
+    const toast = useToast();
+
     const handleFormSubmit = (values: ContactFormValues) => {
         emailjs.send(
             emailJSVariables.SERVICE_ID,
@@ -26,10 +28,24 @@ const ContactForm = () => {
             values as unknown as Record<string, unknown>,
             emailJSVariables.PUBLIC_KEY
         )
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-            }, function (err) {
-                console.log('FAILED...', err);
+            .then(function (_) {
+                toast({
+                    position: "top",
+                    title: "Email sent.",
+                    description: "Thank you for your message. I will get back to you as soon as possible.",
+                    status: "success",
+                    duration: 3000,
+                    isClosable: true,
+                })
+            }, function (_) {
+                toast({
+                    position: "top",
+                    title: "Email failed to send.",
+                    description: "Please try again later.",
+                    status: "error",
+                    duration: 3000,
+                    isClosable: true,
+                })
             });
     };
 
