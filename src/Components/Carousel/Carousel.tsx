@@ -23,9 +23,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     return (
         <Box className="carousel">
             <VStack alignItems={'stretch'} spacing={'1rem'}>
-                <HStack alignItems={'center'} justifyContent={'space-between'} h={'500px'}>
+                <Box className="carousel-container">
                     {images[0] === images[selectedImage] ?
-                        null
+                        <Box />
                         :
                         <Circle onClick={prevImage} className="carousel-navigation carousel-navigation--left">
                             <FontAwesomeIcon icon={faArrowLeft} />
@@ -35,13 +35,13 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                     <Image className="carousel-element" src={images[selectedImage]} alt="carousel image" />
 
                     {images[images.length - 1] === images[selectedImage] ?
-                        null
+                        <Box />
                         :
                         <Circle onClick={nextImage} className="carousel-navigation carousel-navigation--right">
                             <FontAwesomeIcon icon={faArrowRight} />
                         </Circle>
                     }
-                </HStack>
+                </Box>
                 <HStack justifyContent={'center'} spacing={'1rem'}>
                     {images.map((_, index) => (
                         <Circle key={index} size="10px" className={index === selectedImage ? "carousel-circle carousel-circle--active" : "carousel-circle"} onClick={() => setSelectedImage(index)} />
